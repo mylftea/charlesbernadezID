@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles|Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd1f4cf797.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="image" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <br><span>Charles Bernadez</span> <br> from Philippines</h1>
+            </div> -->
+
+            <div class="row">
+
+                <div class="header-col-1">
+                    <span class="topline">Hello</span>
+                    <h1>I'm <br><span class="multiText"></span></h1>
+                    <p>I'm enthusiastic computer science graduate with a passion for all things tech. I enjoy exploring and learning about the latest technologies, and find the field of computer science to be incredibly fascinating. When I'm not coding,
+                        I like to indulge in a delicious scoop of ice cream and appreciate beautiful paintings while listening to Vivaldi's "Winter I. Allegro Non-Molto."
+                    </p>
+                </div>
+
+                <div class="header-col-2">
+                    <img src="images/crow_an_abstract_young_boy_academic_writer_gray_tone_minimalist_872da376-d852-44cc-b3d8-4fd2c2184149.png" alt="about photo">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- --------------------- About ----------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg" alt="about photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm enthusiastic computer science graduate with a passion for all things tech! I love exploring and learning about the latest technologies and find the field of computer science incredibly fascinating. Currently, I'm interested in
+                        building Progressive Web Apps (PWA) to engage a large user base. When I'm not coding, you can find me enjoying a delicious scoop of ice cream.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span style="font-size: 2rem;">Web Development</span><br>&nbsp; Web app Development <br>
+                                <p class="lang"> html, css, javascript, php, python, and <br> PHP: MySQL Database
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Associate IT Intern</span> <br>
+                                <p>
+                                    <ul style="padding-left: 2em;">
+                                        <li style="list-style: unset;">Interned at a Municipal Disaster Risk Reduction Management Office, applying computer science skills to address their document storage challenges.</li>
+                                        <li style="list-style: unset;">Developed a database management system to digitize and organize the extensive collection of physical documents.</li>
+                                        <li style="list-style: unset;">Implemented a system that allowed for easy and quick search and retrieval of specific documents, improving document accessibility and efficiency.
+                                        </li>
+                                        <li style="list-style: unset;">Incorporated features into the system that enabled categorization of documents by type, date, or relevant criteria, making it easier to identify and locate relevant documents when needed.</li>
+                                        <li style="list-style: unset;">Demonstrated proficiency in database management, problem-solving, and communication skills through successful completion of the internship.
+                                        </li>
+                                    </ul>
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br> Bachelor of science in Computer Science at Mabini Colleges Inc.
+                            </li>
+                            <li><span>2019</span><br> Senior Highschool | STEM at Mabini Colleges Inc.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------services----------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        My services include custom website development, website redesign, website maintenance and support, SEO, web hosting and domain registration, and website analytics and reporting. I provide tailored solutions to meet my clients' needs and help businesses
+                        establish a strong online presence, improve website performance, and drive more traffic and conversions.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>PWA's</h2>
+                    <p>
+                        Built using modern web technologies such as HTML, CSS, and JavaScript, Progressive Web App (PWA) is optimized for performance and designed to deliver a fast, reliable, and engaging experience to users. With PWA, users can access your web app from any
+                        device with a modern browser, without the need for a separate app download or installation.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>IoT</h2>
+                    <p>
+                        Smart device home automation system is a powerful and flexible IoT service that allows you to control and automate your home devices from anywhere, at any time. With its advanced features and ease of use, smart system is the perfect solution for anyone
+                        looking to make their home smarter, more energy-efficient, and more secure.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------portfolio----------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/WorkLIFELINE.jpg" alt="">
+                    <div class="layer">
+                        <h3>LIFELINE Web App</h3>
+                        <p>LIFELINE is an innovative and ambitious computer science senior-year project that seeks to solve the pressing issue of blood shortages in the healthcare industry. The primary goal of this project is to tackle the problems of donor
+                            recruitment and retention, with the aim of addressing the shortages of blood that are often experienced in many parts of the world. This Progressive Web Application (PWA) is designed to function seamlessly on any operating
+                            system, making it easily accessible to a wider audience of potential donors.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mdrrmo.png" alt="">
+                    <div class="layer">
+                        <h3>MDRRMO DMS</h3>
+                        <p> During my internship at a Municipal Disaster Risk Reduction Management Office, I had the opportunity to put my computer science skills to the test. One of the main challenges they faced was the organization and storage of their
+                            extensive collection of documents. They had been storing these documents in physical form, which made retrieval and organization a time-consuming and tedious process.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/DENR.png" alt="">
+                    <div class="layer">
+                        <h3>DENR WLPRMS</h3>
+                        <p>The project that I have developed in my freefree time for the Department of Environment and Natural Resources (DENR) wildlife protection reporting management system is a highly significant initiative aimed at protecting and preserving
+                            wildlife species. The website that I have designed allows anyone to report any instances of wildlife sightings or encounters, including those that may be injured, sick, or in need of rescue.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ------------------contact------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>charles.bernadez2001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+639486670890</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="images/Bernadez-Charles-CV.pdf" download class="btn btn2 btn1"><i
+                            class="fa-solid fa-download"></i> CV</a>
+                    <a href="images/Bernadez-Charles-Resume.pdf" download class="btn btn2 btn3"><i
+                            class="fa-solid fa-download"></i> Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Mr. C 2023</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- <form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form> -->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_vHOt1CwZRZ2beVye8xS4OLywV1Kvx20adm1NK6i4_E3aH9abBGeEHgiPwtTpxZh6/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Your message is like a burst of sunshine on a cloudy day that caught my attention and my heart!"
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["charles bernadez", "A Web Developer", "An ice cream Lover"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        })
+    </script>
+</body>
+
+</html>
